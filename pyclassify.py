@@ -51,7 +51,7 @@ def main():
     parser.add_argument("-p", action="store_true", dest="print", help="print the current organizing rules")
     parser.add_argument("-a", action="store", dest="add", nargs='*', help="add the tuple mimetype/path to the ruleset")
     parser.add_argument("-f", action="store", dest="filename", nargs=1, help="specify the ruleset file to use")
-    parser.add_argument("-c", action="store", default=".", dest="clean", help="Classify the file following the rules")
+    parser.add_argument("-c", action="store", default=".", dest="clean", help="classify the specified directory following the rules")
    
     result = parser.parse_args()
     
