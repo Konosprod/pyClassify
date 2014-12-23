@@ -66,7 +66,7 @@ def main():
     if result.print:
         print_file(files)
         
-    if result.clean:
+    if result.clean and not result.print:
         move_files(files, path=result.clean)
         
     

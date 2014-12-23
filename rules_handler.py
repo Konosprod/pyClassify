@@ -15,7 +15,7 @@ def load_rules(rules, filename="rules.csv"):
     
     for l in lines:
         l = l[:-1]
-        rules.append(l.split(";"))
+        rules.append(l.split(","))
         
     f.close()
 
@@ -24,6 +24,6 @@ def write_rules(rules, filename="rules.csv"):
     f = open(filename, "w")
     
     for i in rules:
-        f.write(i[0] + ";" + i[1]+"\n")
+        f.write(i[0] + "," + i[1]+"\n")
     
     f.close()
